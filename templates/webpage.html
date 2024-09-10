@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Balancing Prediction</title>
+</head>
+<body>
+    <h2>Load Balancing Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="feature1">Source Port:</label>
+        <input type="text" id="feature1" name="source_port"><br><br>
+
+        <label for="feature2">Destination IP:</label>
+        <input type="text" id="feature2" name="destination_ip"><br><br>
+
+        <label for="feature3">Destination Port:</label>
+        <input type="text" id="feature3" name="destination_port"><br><br>
+
+        <label for="feature4">Protocol:</label>
+        <input type="text" id="feature4" name="protocol"><br><br>
+
+        <label for="feature5">Flow Duration:</label>
+        <input type="text" id="feature5" name="flow_duration"><br><br>
+
+        <label for="feature6">Total Fwd Packets:</label>
+        <input type="text" id="feature6" name="total_fwd_packets"><br><br>
+
+        <label for="feature7">Total Backward Packets:</label>
+        <input type="text" id="feature7" name="total_backward_packets"><br><br>
+
+        <label for="feature8">Total Length of Fwd Packets:</label>
+        <input type="text" id="feature8" name="total_length_fwd_packets"><br><br>
+
+        <label for="feature9">Total Length of Bwd Packets:</label>
+        <input type="text" id="feature9" name="total_length_bwd_packets"><br><br>
+
+        <label for="feature10">Fwd Packet Length Max:</label>
+        <input type="text" id="feature10" name="fwd_packet_length_max"><br><br>
+
+        <button type="submit">Predict Load Balance</button>
+    </form>
+</body>
+</html>
